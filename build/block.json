@@ -1,0 +1,37 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "create-block/repeater",
+  "version": "0.1.0",
+  "title": "Repeater",
+  "category": "widgets",
+  "icon": "smiley",
+  "description": "Example block scaffolded with Create Block tool.",
+  "example": {},
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "repetitions": {
+      "type": "number",
+      "default": "1"
+    },
+    "texts": {
+      "type": "array",
+      "default": [
+        {
+          "label": "Doctor",
+          "value": 50
+        },
+        {
+          "label": "Engineer",
+          "value": 51
+        }
+      ]
+    }
+  },
+  "textdomain": "repeater",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}
